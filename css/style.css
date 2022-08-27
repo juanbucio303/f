@@ -100,7 +100,7 @@ body {
 
 .next {
   background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
-  right: -20px;
+  right: -0px;
 }
 
 .prev:active,
