@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Draggable & Touch-friendly Slider Example</title>
+
+  <link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .img{
+      margin-right: 60px;
+      width: 50%;
+    }
+  </style>
+
+  <script>
+    function play(){
+      var audio = document.getElementById("audio");
+      audio.play();
+      //audio.remove;
+    }
+    $(document).ready(function(){
+      $('img#img-audio').click( function(){
+        play();
+      })
+    })
+  </script>
+</head>
+
+<body>
+  <div id="slider" class="slider">
+    <div class="wrapper">
+      <div id="items" class="items">
+        <span class="slide" style="display: flex; flex-direction: row-reverse;">
+          <img src="./assets/1.png" class="img" style="width: 80% !important;margin-right: 20px;height: 75%;margin-top: 50px;" alt="" srcset="">
+        </span>
+        <span class="slide" style="display: flex; flex-direction: row-reverse;">
+          <img src="./assets/2.webp" class="img" alt="" srcset="">
+          <div>
+            <p>Hoy desperte</p>
+          </div>
+        </span>
+        <span class="slide" style="display: flex; flex-direction: row-reverse;">
+          <img src="./assets/3.webp" class="img" alt="" srcset="">
+          <div>
+            <p>me tome un cafe</p>
+          </div>
+        </span>
+        <span class="slide" style="display: flex; flex-direction: column; align-items: center;">
+          <img src="./assets/4.png" style="width: 50%;" alt="" srcset="">
+          <div>
+            <p>y desayune algo</p>
+          </div>
+        </span>
+        <span class="slide" style="display: flex;flex-direction: column-reverse;align-items: center;">
+          <img src="./assets/5.webp" class="img" alt="" srcset="">
+          <div style="margin-left: 10px;margin-right: 35px;">
+            <p>pero lo primero que hice cuando desperte fue pensar en ti</p>
+          </div>
+        </span>
+        <span class="slide" style="display: flex; flex-direction: row;">
+          <img src="./assets/6.gif" style="margin-right: 0px !important;" class="img" alt="" srcset="">
+          <div style="margin-right: 45px;">
+            <p>te preguntaras a donde va esto</p>
+          </div>
+        </span>
+        <span class="slide" style="display: flex; flex-direction: column; align-items: center;">
+          <img src="./assets/7.webp" style="width: 50%;" alt="" srcset="">
+          <div>
+            <p>solo para decirte</p>
+          </div>
+        </span>
+        <span class="slide" style="display: flex; flex-direction: row-reverse;">
+          <img src="./assets/8.png" style="margin-right: 20px !important;width: 60%;" class="img" alt="" srcset="">
+        </span>
+        <span class="slide" style="display: flex; flex-direction: row;">
+          <img src="./assets/9.webp" style="margin-right: 0px !important;width: 50%;height: 90%;" class="img" alt="" srcset="">
+          <div style="margin-right: 44px;">
+            <p>se que no ha sido una semana facil pero ntp aqui andamos dando el 200% 
+              bueno el 199% solo por que me gusta el 9 :v</p>
+          </div>
+        </span>
+        <span class="slide" style="display: flex;flex-direction: column;align-items: center;">
+          <div style="margin-right: 44px;">
+            <p>Posdata: Crescamos y mejoremos juntos</p>
+          </div>
+          <img id="img-audio" src="./assets/ultima.png" style="margin-right: 0px !important;width: 40%;height: 50%;" class="img" alt="" srcset="">
+          <div style="margin-right: 44px;">
+            <p>Я люблю тебя (ya lyublyu tyebya)</p>
+            <audio id="audio" controls>
+              <source type="audio/mp3" src="assets/te-quiero.mp3">
+            </audio>
+          </div>
+        </span>
+        
+      </div>
+    </div>
+    <a id="prev" class="control prev"></a>
+    <a id="next" class="control next"></a>
+  </div>
+  
+
+
+  <script src="js/index.js"></script>
+
+
+
+  <script>
+
+  </script>
+</body>
+
+</html>
